@@ -1,0 +1,96 @@
+body {
+  background-color: #f4f4f4;
+  color: #414b3c;
+  font-family: 'Bitter', serif;
+}
+.container {
+  border: 1px solid #d2d2d2;
+  box-shadow: 0px 1px 6px -2px #807f7f;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 16px;
+  height: auto
+}
+
+.header{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #d2d2d2;
+  box-shadow: 0px 1px 6px -2px #807f7f;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+h1{
+  padding-right: 16px
+}
+
+.nasa-logo-container{
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 50%;
+}
+
+.header img{
+  width:100%;
+  height: auto
+}
+button {
+  border-radius: 4px;
+}
+
+.mid-container{
+  display: flex;
+  justify-content: center;
+}
+
+.date-selector{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.calendar-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
+}
+
+.react-calendar{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-container p{
+  font-size: 20px
+}
+
+.apod-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 80%;
+}
+
+#photo{
+  width:100%;
+  height: 100%
+}
+
+#toggle-date{
+  margin-top: 20px
+}
+
+#words p{
+  text-align: center;
+}
