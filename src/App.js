@@ -29,7 +29,7 @@ useEffect(() => {
     console.log(res)
     setApod(res.data);
   }).catch(err => {
-    setError("DARNITT I DONE GOOFED");
+    setError("An Error Occurred");
   })
 }, [date])
   
@@ -48,12 +48,10 @@ useEffect(() => {
       <div className="mid-container">
         <div className="date-selector">
           <div className="calendar-container">
-            { selected === true ? <><h3>Select A Date!</h3>
-            <Calendar 
-            value={date}
-            onChange={changeDate}
-            /></> : <button id="toggle-date" onClick={toggleChange}>Change Date</button>}
-        <p>Current selected date is <b>{moment(date).format('MMMM Do YYYY')}</b></p>  
+            { selected === true ? <> <h3>Select A Date!</h3>
+            <Calendar value={date} onChange={changeDate}/>
+            </> : <button id="toggle-date" onClick={toggleChange}>Change Date</button>}
+            <p>Current selected date is <b>{moment(date).format('MMMM Do YYYY')}</b></p>  
           </div>
         </div>
       </div>
